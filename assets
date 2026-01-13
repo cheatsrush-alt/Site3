@@ -1,0 +1,5 @@
+/assets
+ ├── check-on.png
+ └── check-off.png
+check-on.png   ← imagem PRETA (ativado)
+check-off.png  ← imagem CINZA (desativado)
