@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHZ SENSI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="container">
+  <div class="card">
+    <h1>AUXÍLIO DE MIRA</h1>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('funcoes')">Funções</button>
+      <button class="tab" onclick="showTab('info')">Info</button>
+    </div>
+
+    <!-- FUNÇÕES -->
+    <div id="funcoes" class="tab-content active">
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <img src="assets/check-off.png">
+        <span>Máximo de Precisão</span>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <img src="assets/check-off.png">
+        <span>No Recoil</span>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <img src="assets/check-off.png">
+        <span>Melhor Mira</span>
+      </div>
+
+      <div class="slider-box">
+        <label>Precisão: <span id="precVal">0</span></label>
+        <input type="range" min="0" max="100" value="0"
+          oninput="document.getElementById('precVal').innerText=this.value">
+      </div>
+
+      <select class="select">
+        <option>Selecionar Auxílio</option>
+        <option>Auxílio Cabeça</option>
+        <option>Auxílio no Recoil</option>
+        <option>Auxílio Sensi</option>
+      </select>
+
+      <button class="inject">INJETAR FUNÇÕES NO JOGO</button>
+    </div>
+
+    <!-- INFO -->
+    <div id="info" class="tab-content">
+      <p><strong>Contatar Suporte</strong></p>
+      <p>WhatsApp: <span class="red">27 99845-9309</span></p>
+      <p>Instagram: <span class="red">@chzzxis</span></p>
+      <hr>
+      <p class="small">
+        Proibido revender. A revenda ou distribuição não autorizada
+        resultará em ação legal imediata.
+      </p>
+    </div>
+
+    <span class="footer">CHZ SENSI</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
