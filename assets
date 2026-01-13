@@ -1,5 +1,3 @@
-/assets
- ├── check-on.png
- └── check-off.png
-check-on.png   ← imagem PRETA (ativado)
-check-off.png  ← imagem CINZA (desativado)
+assets/
+ ├── check-on.png   ← imagem PRETA (checkbox ATIVADO)
+ └── check-off.png  ← imagem CINZA (checkbox DESATIVADO)
